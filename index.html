@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmová Noc | Spouštěč</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #38bdf8;
+        }
+
+        p.subtitle {
+            color: #94a3b8;
+            margin-bottom: 40px;
+        }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .movie-card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 1px solid #334155;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 60px;
+        }
+
+        .movie-card:hover {
+            background: #38bdf8;
+            color: #0f172a;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
+            border-color: #38bdf8;
+        }
+
+        .movie-card span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        footer {
+            margin-top: auto;
+            padding-top: 40px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Filmová Noc</h1>
+    <p class="subtitle">Vyber film a začni promítat</p>
+
+    <div class="movie-grid">
+        <a href="/filmovanoc/8mile" target="_blank" class="movie-card"><span>8 Mile</span></a>
+        <a href="/filmovanoc/avatar" target="_blank" class="movie-card"><span>Avatar</span></a>
+        <a href="/filmovanoc/divergence" target="_blank" class="movie-card"><span>Divergence</span></a>
+        <a href="/filmovanoc/harrypotter" target="_blank" class="movie-card"><span>Harry Potter</span></a>
+        <a href="/filmovanoc/interstellar" target="_blank" class="movie-card"><span>Interstellar</span></a>
+        <a href="/filmovanoc/japadouch4" target="_blank" class="movie-card"><span>Já, padouch 4</span></a>
+        <a href="/filmovanoc/jumanji" target="_blank" class="movie-card"><span>Jumanji</span></a>
+        <a href="/filmovanoc/milerovinatripu" target="_blank" class="movie-card"><span>Millerovi na tripu</span></a>
+        <a href="/filmovanoc/minecraftvefilmu" target="_blank" class="movie-card"><span>Minecraft ve filmu</span></a>
+        <a href="/filmovanoc/ocista" target="_blank" class="movie-card"><span>Očista</span></a>
+        <a href="/filmovanoc/shrek" target="_blank" class="movie-card"><span>Shrek</span></a>
+        <a href="/filmovanoc/superbad" target="_blank" class="movie-card"><span>Superbad</span></a>
+        <a href="/filmovanoc/topgun-maverick" target="_blank" class="movie-card"><span>Top Gun: Maverick</span></a>
+        <a href="/filmovanoc/vhlave2" target="_blank" class="movie-card"><span>V hlavě 2</span></a>
+        <a href="/filmovanoc/vlkodlaciztemnehohvozdu" target="_blank" class="movie-card"><span>Vlkodlaci z Temného hvozdu</span></a>
+        <a href="/filmovanoc/zootropolis" target="_blank" class="movie-card"><span>Zootropolis</span></a>
+    </div>
+
+    <footer>
+        Kliknutím na film se otevře nová karta s přehrávačem.
+    </footer>
+
+</body>
+</html>
