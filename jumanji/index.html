@@ -2,7 +2,10 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumanji: Další level</title>
     <style>
+        /* Nastavení pro zobrazení bez okrajů a skrolování */
         body, html {
             margin: 0;
             padding: 0;
@@ -12,19 +15,24 @@
             background-color: #000;
         }
 
-        video {
+        /* Iframe roztažený na maximální šířku i výšku */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100vw;
             height: 100vh;
-            object-fit: contain;
+            border: none;
         }
     </style>
-    <title>Jumanji</title>
 </head>
 <body>
 
-    <video controls autoplay name="media">
-        <source src="https://prg-c2-storage6.premiumcdn.net/170365388/1O3toYhgGS4xizPIY3UXOhErtmVSO4TZRFq2cR3iV6CKqU9OcjZujxI3vhjOiMECX9C4WIrKf2lTvps06CJVCpzu4EFl2HkLH1OslGIpltWzIOJsYJCqv.mp4?token=9Kv3tL7YfAqC&expires=1778350593&sparams=token%2Cpath%2Cexpires&signature=5776a42ceb63808165e1a8656e49ba7c7c419440" type="video/mp4">
-    </video>
+    <iframe 
+        src="https://prehrajto.cz/embed/jumanji-dalsi-level-2019-cz-dabing-4k-mkv/93c6dc6ce0b99bed" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 
 </body>
 </html>
