@@ -2,29 +2,37 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přehrávač - 8 Mile</title>
     <style>
+        /* Odstranění okrajů a skrytí posuvníků */
         body, html {
             margin: 0;
             padding: 0;
-            width: 100%;
             height: 100%;
+            width: 100%;
             overflow: hidden;
-            background-color: #000;
+            background-color: #000; /* Černé pozadí pro filmový zážitek */
         }
 
-        video {
-            width: 100vw;
-            height: 100vh;
-            object-fit: contain;
+        /* Styl pro iframe, aby pokryl celou obrazovku */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
-    <title>8. Mile</title>
 </head>
 <body>
 
-    <video controls autoplay name="media">
-        <source src="https://prg-c3-storage1.premiumcdn.net/18586689/XlaT2RIPbcvWcnPSVyC1lIxgS1gC4RClquK5SR9HKYixgUXYs2PSLaHMycZvF3GFNku7lCwOcYzSGJC1Vuz9FyjTKBTlnubGuyAhp4SlOH37SQesWRc12.mp4?token=9Kv3tL7YfAqC&expires=1778350108&sparams=token%2Cpath%2Cexpires&signature=44610155b2df7280e7bdbe1afcbe7ebb013d42d2" type="video/mp4">
-    </video>
+    <iframe 
+        src="https://prehrajto.cz/embed/8-mile-2002-fullhd-czdabing/5f5cb8e71f470" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 
 </body>
 </html>
