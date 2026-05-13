@@ -2,7 +2,10 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superbad</title>
     <style>
+        /* Úplné roztažení na celou plochu bez okrajů */
         body, html {
             margin: 0;
             padding: 0;
@@ -12,20 +15,24 @@
             background-color: #000;
         }
 
-        video {
+        /* Iframe roztažený na 100% šířky i výšky prohlížeče */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100vw;
             height: 100vh;
-            object-fit: contain;
+            border: none;
         }
     </style>
-    <title>Superbad</title>
 </head>
 <body>
 
-    <video controls autoplay name="media">
-        <source src="https://pf-storage5.premiumcdn.net/168857551/EJyHoPckquzGIx1T0Nf28cNXfRdf7qh9ZHmaUVnIpaiDNioNCRkCKZf6Vu5MTG2Fz7uGlta0UzxS7jHREFw1hnaf6rhAocVxCz9tk5urEHnwhwyIyVfNl.mp4?token=9Kv3tL7YfAqC&expires=1778350417&sparams=token%2Cpath%2Cexpires&signature=0776c0a0047ddb0e03e1dd40e01715700657a5e9
-" type="video/mp4">
-    </video>
+    <iframe 
+        src="https://prehrajto.cz/embed/superbad-2007-unrated-extended-1080p-bluray-remux-avc-truehd-5-1-dd-5-1-hzyk-mp4/d492c425375c29fd" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 
 </body>
 </html>
