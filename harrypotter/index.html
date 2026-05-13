@@ -2,7 +2,10 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter a Tajemná komnata</title>
     <style>
+        /* Odstranění všech okrajů a rolování */
         body, html {
             margin: 0;
             padding: 0;
@@ -12,19 +15,24 @@
             background-color: #000;
         }
 
-        video {
+        /* Iframe roztažený na 100% šířky a výšky okna */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100vw;
             height: 100vh;
-            object-fit: contain;
+            border: none;
         }
     </style>
-    <title>Harry Potter a Tajemná komnata</title>
 </head>
 <body>
 
-    <video controls autoplay name="media">
-        <source src="https://pf-storage1.premiumcdn.net/148875210/D8dcvEsr4UOWsnGtXkungskQFQLhZjhgWuQZs4WIoPcmatVliP5TxqiaXtwGue4fb8TvEHmQijmCwgUmJuvntlgT7nSdxfMKC2xFb4TKPSMYfdLfyOiqx.mp4?token=9Kv3tL7YfAqC&expires=1778351913&sparams=token%2Cpath%2Cexpires&signature=d9b1d606fd312a9b98df3c7d930ceb1b645564a4" type="video/mp4">
-    </video>
+    <iframe 
+        src="https://prehrajto.cz/embed/harry-potter-a-tajemna-komnata-cz-dabing-topkvalita4k/68d965c9cc074" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 
 </body>
 </html>
