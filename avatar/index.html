@@ -2,29 +2,37 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar: Oheň a popel</title>
     <style>
+        /* Odstranění mezer a zajištění 100% plochy */
         body, html {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
-            overflow: hidden;
-            background-color: #000;
+            overflow: hidden; /* Zamezí scrollování */
+            background-color: #000; /* Černé pozadí */
         }
 
-        video {
+        /* Iframe roztažený na celou obrazovku */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100vw;
             height: 100vh;
-            object-fit: contain;
+            border: none;
         }
     </style>
-    <title>Avatar</title>
 </head>
 <body>
 
-    <video controls autoplay name="media">
-        <source src="https://pf-storage6.premiumcdn.net/170998298/KyGfQlSXxiDquWgfkEF1BSKySpYcaPUzmUbDCl9U4Qi67f7AhbXi3xC9jHMQhoPCobhx7tgls4jUWqHXpumYCe6iZpc2XtlaIYqF7osoysVMiWqHrKUbG.mp4?token=9Kv3tL7YfAqC&expires=1778351636&sparams=token%2Cpath%2Cexpires&signature=f79f55afdfff8455c8bcbff40400aed6b6aabf8e" type="video/mp4">
-    </video>
+    <iframe 
+        src="https://prehrajto.cz/embed/avatar-ohen-a-popel-2025-4k-hdr-cz-eng-sk-mkv/9eceadef19d1e22c" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 
 </body>
 </html>
