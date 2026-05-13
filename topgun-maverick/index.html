@@ -2,7 +2,10 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Gun: Maverick</title>
     <style>
+        /* Úplné roztažení na celou plochu bez okrajů */
         body, html {
             margin: 0;
             padding: 0;
@@ -12,19 +15,24 @@
             background-color: #000;
         }
 
-        video {
+        /* Iframe roztažený na 100% šířky i výšky prohlížeče */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100vw;
             height: 100vh;
-            object-fit: contain;
+            border: none;
         }
     </style>
-    <title>Top Gun: Maverick</title>
 </head>
 <body>
 
-    <video controls autoplay name="media">
-        <source src="https://pf-storage5.premiumcdn.net/170128609/ewEfEgUxJI62SdgcwBh73UA4FWwUdxcr7IPjfnvILMIwRSQmhLJiWLte0uMvhBlCOZSaeCmVtoOclwImLI17fopud0CBAsK2fXLh9XFgxI6YhALh96I9N.mp4?token=9Kv3tL7YfAqC&expires=1778333411&sparams=token%2Cpath%2Cexpires&signature=56727ff5b83ec0487e52b502af6e745df6328896" type="video/mp4">
-    </video>
+    <iframe 
+        src="https://prehrajto.cz/embed/novinka-top-gun-maverick-2022-en-cz-dabing-1080p-mkv/e4e942af95a1a87f" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 
 </body>
 </html>
