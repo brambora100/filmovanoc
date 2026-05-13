@@ -2,7 +2,10 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V Hlavě 2</title>
     <style>
+        /* Odstranění okrajů a skrytí scrollbaru */
         body, html {
             margin: 0;
             padding: 0;
@@ -12,19 +15,24 @@
             background-color: #000;
         }
 
-        video {
+        /* Iframe roztažený na celou plochu okna */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100vw;
             height: 100vh;
-            object-fit: contain;
+            border: none;
         }
     </style>
-    <title>V Hlavě 2</title>
 </head>
 <body>
 
-    <video controls autoplay name="media">
-        <source src="https://pf-storage5.premiumcdn.net/170385722/JKqf84ukJimXtvkF2jf0xurwhojCmNTJqfPpcYVSnEidJH5vHyxiRrC7KUXoiWjCWKSxZHVZIpQIy4i42TkVIyZI9dFVpcg4FqxUoOIGKso6C4EU5nTjQ.mp4?token=9Kv3tL7YfAqC&expires=1778351193&sparams=token%2Cpath%2Cexpires&signature=b541ba88ce05f0b89c1bfcb08a62f1a61d99ea42" type="video/mp4">
-    </video>
+    <iframe 
+        src="https://prehrajto.cz/embed/v-hlave-2-2160p-cz-sk-dabing/94473a59e4d3bb56" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 
 </body>
 </html>
