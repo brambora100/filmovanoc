@@ -2,7 +2,10 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft ve filmu</title>
     <style>
+        /* Úplné roztažení na celé okno prohlížeče */
         body, html {
             margin: 0;
             padding: 0;
@@ -12,19 +15,24 @@
             background-color: #000;
         }
 
-        video {
+        /* Iframe vyplňující 100% šířky i výšky */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100vw;
             height: 100vh;
-            object-fit: contain;
+            border: none;
         }
     </style>
-    <title>Minecraft ve filmu</title>
 </head>
 <body>
 
-    <video controls autoplay name="media">
-        <source src="https://pf-storage6.premiumcdn.net/169271956/ZryFRrUZYFR1fVrHNdF5gUdvS9jiBXcAYhZYiwvHxvSWdcRQSygFoksblILYsAOfPjsx1IRlFlyuVyCxKSN5tDVCX6SrBcWvCKNCy9SGJc9LTPJCD0T2Y.mp4?token=9Kv3tL7YfAqC&expires=1778351855&sparams=token%2Cpath%2Cexpires&signature=d817c4fa2888d6945ec0fa3d4810e4addb108fd9" type="video/mp4">
-    </video>
+    <iframe 
+        src="https://prehrajto.cz/embed/minecraft-film-2025-1080p-cz-sk-en-mp4/ac0b4412d7bdb90f" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 
 </body>
 </html>
