@@ -2,7 +2,10 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlkodlaci z Temného hvozdu</title>
     <style>
+        /* Odstranění okrajů a zamezení scrollování */
         body, html {
             margin: 0;
             padding: 0;
@@ -12,19 +15,24 @@
             background-color: #000;
         }
 
-        video {
+        /* Iframe roztažený na celou šířku i výšku okna */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100vw;
             height: 100vh;
-            object-fit: contain;
+            border: none;
         }
     </style>
-    <title>Vlkodlaci z Temného hvozdu</title>
 </head>
 <body>
 
-    <video controls autoplay name="media">
-        <source src="https://pf-storage1.premiumcdn.net/164289749/VGdS92TbVHYruOqHBmT41TnRhG4s27H7ksRlCmYC4Js9DHPBImBuEdF94tgPHJVHwztRxhLqsJ4C1msJatzPc5pSAmSD4sY8CVaF9pI5bcnRCWZH6qsEa.mp4?token=9Kv3tL7YfAqC&expires=1778351740&sparams=token%2Cpath%2Cexpires&signature=a72fa13b06e09913f6b7886d4c73e2e432434bb1" type="video/mp4">
-    </video>
+    <iframe 
+        src="https://prehrajto.cz/embed/vlkodlaci-z-temneho-hvozdu-cz-dab-2024-mkv/5f6befd6f6ad2058" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 
 </body>
 </html>
