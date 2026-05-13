@@ -2,7 +2,10 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Očista</title>
     <style>
+        /* Úplné roztažení na celou obrazovku bez mezer */
         body, html {
             margin: 0;
             padding: 0;
@@ -12,19 +15,24 @@
             background-color: #000;
         }
 
-        video {
+        /* Iframe roztažený na 100% šířky i výšky prohlížeče */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100vw;
             height: 100vh;
-            object-fit: contain;
+            border: none;
         }
     </style>
-    <title>Očista</title>
 </head>
 <body>
 
-    <video controls autoplay name="media">
-        <source src="https://pf-storage1.premiumcdn.net/3284179/vDoUvKhZJUNvIzgTojI8jh5aU8ZI0KTWdc9Lsm2tLJSg4cpNSqYuG7uvbToXT85uPmSXeSQjH7kHvmUDKHjyieJuQYFK8Sy3s24IVRsPmTV8cYoFAltjv.mp4?token=9Kv3tL7YfAqC&expires=1778350899&sparams=token%2Cpath%2Cexpires&signature=5588d932485dadda996d7fc630ddff82ca2f86e8" type="video/mp4">
-    </video>
+    <iframe 
+        src="https://prehrajto.cz/embed/ocista-2013-cz-dabing-fullhd/6519c1d7b4ba1" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 
 </body>
 </html>
