@@ -2,7 +2,10 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millerovi na tripu</title>
     <style>
+        /* Odstranění okrajů a zamezení posouvání stránky */
         body, html {
             margin: 0;
             padding: 0;
@@ -12,19 +15,24 @@
             background-color: #000;
         }
 
-        video {
+        /* Iframe roztažený na celou šířku i výšku okna */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100vw;
             height: 100vh;
-            object-fit: contain;
+            border: none;
         }
     </style>
-    <title>Milerovi na tripu</title>
 </head>
 <body>
 
-    <video controls autoplay name="media">
-        <source src="https://pf-storage3.premiumcdn.net/167041394/Ey9TJAIQnc4pHgyI4aIzlI12sZ2hg9SoWsqVskaiPmuVwCeQCb5ilMhvqC0Ah45uXzC2bcYMhg9TnrC7PT2buKbu2Ghx7HK6sJvuRyirlSvyCPBcRlirx.mp4?token=9Kv3tL7YfAqC&expires=1778354851&sparams=token%2Cpath%2Cexpires&signature=eecd677dec8332d67941c69e5b1314248d347b15" type="video/mp4">
-    </video>
+    <iframe 
+        src="https://prehrajto.cz/embed/milerovi-na-tripu/5b73369c271b3" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 
 </body>
 </html>
