@@ -2,7 +2,10 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divergence</title>
     <style>
+        /* Vaše nastavení pro celou obrazovku */
         body, html {
             margin: 0;
             padding: 0;
@@ -12,19 +15,24 @@
             background-color: #000;
         }
 
-        video {
+        /* Aplikace 100vw/vh na iframe pro maximální velikost */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100vw;
             height: 100vh;
-            object-fit: contain;
+            border: none;
         }
     </style>
-    <title>Divergence</title>
 </head>
 <body>
 
-    <video controls autoplay name="media">
-        <source src="https://prg-c10-storage6.premiumcdn.net/170595824/4nluKeiKytL9t1ZS3ySzPikpSRzSdatMbhGziMyUp3T4eCdyuYnTazHBnF3VU6gflpTLMcdVuBefPyUqwCZPuzaTm1sbGS85svAtGEUmyteEhM7cWasw9.mp4?token=9Kv3tL7YfAqC&expires=1778350815&sparams=token%2Cpath%2Cexpires&signature=711087301a56b43d83297c7117d962859447fb66" type="video/mp4">
-    </video>
+    <iframe 
+        src="https://prehrajto.cz/embed/divergence-1-1080p-cz/5acd5c053ac3c" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 
 </body>
 </html>
