@@ -2,7 +2,10 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zootropolis 2</title>
     <style>
+        /* Odstranění okrajů a skrytí scrollbaru pro čistý obraz */
         body, html {
             margin: 0;
             padding: 0;
@@ -12,19 +15,24 @@
             background-color: #000;
         }
 
-        video {
+        /* Iframe roztažený na celou šířku i výšku okna */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100vw;
             height: 100vh;
-            object-fit: contain;
+            border: none;
         }
     </style>
-    <title>Zootropolis 2</title>
 </head>
 <body>
 
-    <video controls autoplay name="media">
-        <source src="https://prg-c2-storage3.premiumcdn.net/170427209/lO0I3NSzltRDidmf6guVYSnXfoVFY3TG2H4NfLoh1wsJmseLUpBfXnC2yu6es40h5jhbPFV0U5WfR3CoetZVtZ3FzJFXEtzjtYmFdkujdHe3uNquyGt2w.mp4?token=9Kv3tL7YfAqC&expires=1778350712&sparams=token%2Cpath%2Cexpires&signature=7aafc9c48b22b5c85fb533d338c73a94f5694a54" type="video/mp4">
-    </video>
+    <iframe 
+        src="https://prehrajto.cz/embed/zootropolis-mesto-zvirat-2-2025-mkv/d6a3ffcaf0f9e15b" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 
 </body>
 </html>
