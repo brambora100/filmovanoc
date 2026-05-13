@@ -2,29 +2,37 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interstellar</title>
     <style>
+        /* Úplné vyčištění okrajů prohlížeče */
         body, html {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
-            overflow: hidden;
-            background-color: #000;
+            overflow: hidden; /* Žádné skrolování */
+            background-color: #000; /* Vesmírná černá */
         }
 
-        video {
+        /* Iframe roztažený na 100% šířky i výšky pohledu (Viewport) */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100vw;
             height: 100vh;
-            object-fit: contain;
+            border: none;
         }
     </style>
-    <title>Interstellar</title>
 </head>
 <body>
 
-    <video controls autoplay name="media">
-        <source src="https://pf-storage6.premiumcdn.net/170372648/mwPHxwS3Bc0KijEF8oIA9SMRCwdU8Ri43hwYHdLIm5C8mH27IKvfJBswbhoXCZ4fbLcjeUkYCEyCxGi4BfJNH48uJmCyaTLOi4jiBOt89iOBtd2IxWHgV.mp4?token=9Kv3tL7YfAqC&expires=1778351547&sparams=token%2Cpath%2Cexpires&signature=c9b540f402d9d87c38d31cbd2bd20d4fc2915a33" type="video/mp4">
-    </video>
+    <iframe 
+        src="https://prehrajto.cz/embed/interstellar-2014-cz-en-dabing-mp4/56e1dcb78e37527d" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 
 </body>
 </html>
